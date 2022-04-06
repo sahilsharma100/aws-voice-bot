@@ -1,0 +1,22 @@
+Hello $.Attributes.name, How are you doing?  This is Automated dispatcher call from $.Attributes.CompanyName. 
+I am calling regarding workorder $.Attributes.WONumber,  $.Attributes.LoadInfo. 
+Pickup date time is $.Attributes.PickupDateTime and delivery date time is $.Attributes.DeliveryDateTime.
+
+kgs
+
+lbs
+
+
+DB_CONNECTION=mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=dtlavlee_demodiet
+DB_USERNAME=dtlavlee_chat
+DB_PASSWORD=mvu*&^n$@74(*&trv
+
+DB_CONNECTION=mysql
+DB_HOST=103.102.234.139
+DB_PORT=3306
+DB_DATABASE=dietitia_test
+DB_USERNAME=dietitia_test
+DB_PASSWORD=jMxpF&;DOYsS

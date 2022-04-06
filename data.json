@@ -1,0 +1,239 @@
+{
+  "Details": {
+    "ContactData": {
+      "Attributes": {
+        "name": "Anil Jahangir",
+        "number": "+12052163578",
+        "companyName": "Netmente",
+        "WoNumber": "9103180340",
+        "LoadInfo": "Apple Imac 1 from Delhi",
+        "PickupDateTime": "10-jan-2021",
+        "DeliveryDateTime": "26-oct-2021",
+        "StopType": "Pickup",
+        "FacilityName": "Netmente",
+        "City": "Mohali",
+        "State": "Punjab"
+      },
+      "Channel": "VOICE",
+      "ContactId": "dc6df3f8-a721-4e84-9224-3bc86ba50fdd",
+      "CustomerEndpoint": {
+        "Address": "+12052163578",
+        "Type": "TELEPHONE_NUMBER"
+      },
+      "CustomerId": null,
+      "Description": null,
+      "InitialContactId": "dc6df3f8-a721-4e84-9224-3bc86ba50fdd",
+      "InitiationMethod": "API",
+      "InstanceARN": "arn:aws:connect:us-west-2:479620737975:instance/6575e0ac-684a-463b-9157-aa890623ae2f",
+      "LanguageCode": "en-US",
+      "MediaStreams": { "Customer": { "Audio": null } },
+      "Name": null,
+      "PreviousContactId": "dc6df3f8-a721-4e84-9224-3bc86ba50fdd",
+      "Queue": null,
+      "References": {},
+      "SystemEndpoint": {
+        "Address": "+18006218041",
+        "Type": "TELEPHONE_NUMBER"
+      }
+    },
+    "Parameters": { "StopType": "Pickup" }
+  },
+  "Name": "ContactFlowEvent",
+  "Lex Data":{
+    "alternativeIntents": [
+      {
+        "intentName": "AMAZON.FallbackIntent",
+        "nluIntentConfidence": null,
+        "slots": {}
+      },
+      {
+        "intentName": "No",
+        "nluIntentConfidence": {
+          "score": 0.19
+        },
+        "slots": {}
+      }
+    ],
+    "botVersion": "$LATEST",
+    "dialogState": "ReadyForFulfillment",
+    "intentName": "StopTypeIntent",
+    "message": null,
+    "messageFormat": null,
+    "nluIntentConfidence": {
+      "score": 1
+    },
+    "responseCard": null,
+    "sentimentResponse": null,
+    "sessionAttributes": {},
+    "sessionId": "2021-10-27T12:18:42.681Z-qEyyXaZg",
+    "slotToElicit": null,
+    "slots": {
+      "CheckinTimeSlot": "10:00",
+      "CheckoutTimeSlot": "10:00",
+      "LocationSlot": "mojhali",
+      "Outstandingissue": "yes",
+      "TempSlot": "10 degree celcius",
+      "eta": "P2D",
+      "ontrack": "yes"
+    }
+  },
+  "payload" :{
+    "WOId": "Sahil",
+    "StopId": "StopId ",
+    "Checkin": "Collected checkin time",
+    "Checkout": "Collected checkout itme",
+    "CurrentLocation": "Collected current location",
+    "Temp": "Collected temperature",
+    "OnTrack": "Collected on track to delivery ",
+    "ETA": "Collected ETA info ",
+    "Issues": "Collected issues ",
+    "CreatedDate": "2-11-2021",
+    "UpdatedDate": "22-11-2021"
+    },
+    "data" :{
+      "resource": "/outBoundCall",
+      "path": "/outBoundCall",
+      "httpMethod": "POST",
+      "headers": null,
+      "multiValueHeaders": null,
+      "queryStringParameters": null,
+      "multiValueQueryStringParameters": null,
+      "pathParameters": null,
+      "stageVariables": null,
+      "requestContext": {
+        "resourceId": "u4hsp4",
+        "resourcePath": "/outBoundCall",
+        "httpMethod": "POST",
+        "extendedRequestId": "IKoJNHdMPHcFhTQ=",
+        "requestTime": "02/Nov/2021:07:49:01 +0000",
+        "path": "/outBoundCall",
+        "accountId": "479620737975",
+        "protocol": "HTTP/1.1",
+        "stage": "test-invoke-stage",
+        "domainPrefix": "testPrefix",
+        "requestTimeEpoch": 1635839341935,
+        "requestId": "e0864eba-cf5a-4929-a68e-8aead1ee12b0",
+        "identity": {
+          "cognitoIdentityPoolId": null,
+          "cognitoIdentityId": null,
+          "apiKey": "test-invoke-api-key",
+          "principalOrgId": null,
+          "cognitoAuthenticationType": null,
+          "userArn": "arn:aws:iam::479620737975:user/vijayk",
+          "apiKeyId": "test-invoke-api-key-id",
+          "userAgent": "aws-internal/3 aws-sdk-java/1.12.76 Linux/5.4.134-73.228.amzn2int.x86_64 OpenJDK_64-Bit_Server_VM/25.302-b08 java/1.8.0_302 vendor/Oracle_Corporation cfg/retry-mode/standard",
+          "accountId": "479620737975",
+          "caller": "AIDAW7K47VO3UAL56OSDN",
+          "sourceIp": "test-invoke-source-ip",
+          "accessKey": "ASIAW7K47VO333DVHTW2",
+          "cognitoAuthenticationProvider": null,
+          "user": "AIDAW7K47VO3UAL56OSDN"
+        },
+        "domainName": "testPrefix.testDomainName",
+        "apiId": "4g21n1hbw6"
+      },
+      "body": "{\n  \"name\": \"Anil Jahangir\",\n  \"number\": \"+12052163578\",\n  \"companyName\": \"Netmente\",\n  \"WoNumber\": \"9103180340\",\n  \"LoadInfo\": \"Apple Imac 1 from Delhi\",\n  \"PickupDateTime\": \"10-jan-2021\",\n  \"DeliveryDateTime\": \"26-oct-2021\",\n  \"StopType\": \"Pickup\",\n  \"FacilityName\": \"Netmente\",\n  \"City\": \"Mohali\",\n  \"State\": \"Punjab\"\n}",
+      "isBase64Encoded": false
+    },
+    "lexToSaveToDdb":{
+      "messageVersion": "1.0",
+      "invocationSource": "FulfillmentCodeHook",
+      "userId": "7f0fe37e-adb1-4658-85f3-b4dbd39d3028",
+      "sessionAttributes": {},
+      "requestAttributes": null,
+      "bot": { "name": "GetLoad_Bot", "alias": "$LATEST", "version": "$LATEST" },
+      "outputDialogMode": "Text",
+      "currentIntent": {
+        "name": "StopTypeIntent",
+        "slots": {
+          "CheckoutTimeSlot": "12:00",
+          "LocationSlot": "mali",
+          "eta": "P1D",
+          "CheckinTimeSlot": "09:00",
+          "TempSlot": "delivery celsius",
+          "ontrack": "yes",
+          "Outstandingissue": "yeah yeah"
+        },
+        "slotDetails": {
+          "CheckoutTimeSlot": ["Object"],
+          "LocationSlot": ["Object"],
+          "eta": ["Object"],
+          "CheckinTimeSlot": ["Object"],
+          "TempSlot": ["Object"],
+          "ontrack": ["Object"],
+          "Outstandingissue": ["Object"]
+        },
+        "confirmationStatus": "None",
+        "nluIntentConfidenceScore": 1
+      },
+      "alternativeIntents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "slots": {},
+          "slotDetails": {},
+          "confirmationStatus": "None",
+          "nluIntentConfidenceScore": null
+        },
+        {
+          "name": "No",
+          "slots": {},
+          "slotDetails": {},
+          "confirmationStatus": "None",
+          "nluIntentConfidenceScore": 0.17
+        }
+      ],
+      "inputTranscript": "yeah yeah",
+      "recentIntentSummaryView": [
+        {
+          "intentName": "StopTypeIntent",
+          "checkpointLabel": null,
+          "slots": ["Object"],
+          "confirmationStatus": "None",
+          "dialogActionType": "ElicitSlot",
+          "fulfillmentState": null,
+          "slotToElicit": "Outstandingissue"
+        }
+      ],
+      "sentimentResponse": null,
+      "kendraResponse": null
+    }
+}
+
+
+/// Check stop stype with attributes 
+
+Details: {
+  ContactData: {
+    Attributes: [Object],
+    Channel: 'CHAT',
+    ContactId: '291ba59f-8d37-4f31-b7bf-ba72a2344131',
+    CustomerEndpoint: null,
+    CustomerId: null,
+    Description: null,
+    InitialContactId: '291ba59f-8d37-4f31-b7bf-ba72a2344131',
+    InitiationMethod: 'API',
+    InstanceARN: 'arn:aws:connect:us-west-2:479620737975:instance/6575e0ac-684a-463b-9157-aa890623ae2f',
+    LanguageCode: 'en-US',
+    MediaStreams: [Object],
+    Name: null,
+    PreviousContactId: '291ba59f-8d37-4f31-b7bf-ba72a2344131',
+    Queue: null,
+    References: {},
+    SystemEndpoint: null
+  },
+  Parameters: { CheckoutTimeSlot: '10:00', woId: '9103180340' }
+},
+Name: 'ContactFlowEvent'
+}
+
+Call outbound multiple error
+{
+  code: 'LimitExceededException',
+  time: 2021-11-10T13:04:50.409Z,
+  requestId: 'fbde65be-b62a-4589-bfa1-f85c73b02ad2',
+  statusCode: 429,
+  retryable: true
+}
+
+12052163578
+12056231810
